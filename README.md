@@ -12,16 +12,14 @@ An end-to-end, ultra-low-latency **Edge AI Audio Classification System** running
 
 ## 📸 Screenshots & Demo
 
-> *Place your UI screenshots into the `docs/screenshots/` folder with the filenames below.*
-
 ### 🖥️ Web UI Dashboard & Waveform Preview
-![Web UI Dashboard](docs/screenshots/web_ui_dashboard.png)
+![Web UI Dashboard](docs/web_ui_dashboard.jpg)
 *Figure 1: Responsive Web UI running directly from the ESP32 with audio drag-and-drop, client-side WebAudio decoding, and waveform rendering.*
 
 ---
 
 ### ⏱️ Classification Results & Detailed Timing Benchmarks
-![Classification Results](docs/screenshots/classification_results.png)
+![Classification Results](docs/classification_results.png)
 *Figure 2: Real-time prediction with class confidence bar charts and microsecond-level timing breakdown table matching device and browser latency.*
 
 ---
