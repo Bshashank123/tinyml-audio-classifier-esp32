@@ -82,22 +82,15 @@ tiny/
 │   └── screenshots/                           # UI and hardware screenshot placeholders
 │       ├── web_ui_dashboard.png
 │       └── classification_results.png
-├── arduino_firmware/
-│   └── TinyML_AudioClassifier/                # Modular ESP32 Arduino sketch
-│       ├── TinyML_AudioClassifier.ino         # Main entry point (setup and loop)
-│       ├── audio_processor.cpp / .h           # FFT and 32-band Mel filterbank DSP
-│       ├── ml_inference.cpp / .h              # TFLite Micro interpreter and inference
-│       ├── web_server.cpp / .h                # Async web server and streaming REST API
-│       ├── wifi_ap.cpp / .h                   # Wi-Fi SoftAP configuration
-│       ├── class_labels.h                     # 5-class target labels and categories
-│       ├── model_data.h                       # Quantized TFLite model flatbuffer array
-│       └── index_html.h                       # Embedded responsive Web UI in PROGMEM
-└── model_training/
-    ├── train_model.py                         # Dataset pipeline, training, and quantization
-    ├── export_tflite.py                       # TFLite export & quantization utility
-    ├── convert_to_header.py                   # C header generator for model byte array
-    ├── requirements.txt                       # Python dependencies
-    └── preprocess_config.json                 # Preprocessing parameters configuration
+└── TinyML_AudioClassifier/                    # Modular ESP32 Arduino sketch
+    ├── TinyML_AudioClassifier.ino             # Main entry point (setup and loop)
+    ├── audio_processor.cpp / .h               # FFT and 32-band Mel filterbank DSP
+    ├── ml_inference.cpp / .h                  # TFLite Micro interpreter and inference
+    ├── web_server.cpp / .h                    # Async web server and streaming REST API
+    ├── wifi_ap.cpp / .h                       # Wi-Fi SoftAP configuration
+    ├── class_labels.h                         # 5-class target labels and categories
+    ├── model_data.h                           # Quantized TFLite model flatbuffer array
+    └── index_html.h                           # Embedded responsive Web UI in PROGMEM
 ```
 
 ---
@@ -133,7 +126,7 @@ Install the following libraries via the Arduino IDE Library Manager:
    - Open **Tools > Board > Boards Manager**, search for `esp32` by **Espressif Systems**, and click **Install**.
 
 2. **Open the Sketch**:
-   - Open [`arduino_firmware/TinyML_AudioClassifier/TinyML_AudioClassifier.ino`](arduino_firmware/TinyML_AudioClassifier/TinyML_AudioClassifier.ino) in Arduino IDE.
+   - Open [`TinyML_AudioClassifier/TinyML_AudioClassifier.ino`](TinyML_AudioClassifier/TinyML_AudioClassifier.ino) in Arduino IDE.
 
 3. **Configure Board Options**:
    - **Board**: `ESP32-S3 Dev Module` (or your specific ESP32 board).

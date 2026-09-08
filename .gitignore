@@ -1,5 +1,10 @@
-# Datasets and large training numpy arrays
-ESC-50-master/
+# Local workspace folders
+/ESC-50-master/
+/model_training/
+/web_interface/
+/arduino_firmware/
+/class_labels.h
+/model_data.h
 *.npy
 *.wav
 *.mp3
@@ -8,10 +13,6 @@ ESC-50-master/
 __pycache__/
 *.py[cod]
 *.class
-.pytest_cache/
-.venv/
-venv/
-ENV/
 
 # Arduino build artifacts
 *.hex
