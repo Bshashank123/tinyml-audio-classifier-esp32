@@ -1,4 +1,4 @@
-# 🎙️ TinyML Audio Classifier on ESP32 / ESP32-S3
+# 🎙️ TinyML Audio Classifier on Aurdino Nano ESP32 / ESP32-S3
 
 [![ESP32](https://img.shields.io/badge/Platform-ESP32%20%7C%20ESP32--S3-orange.svg)](https://www.espressif.com/)
 [![TensorFlow Lite Micro](https://img.shields.io/badge/AI-TensorFlow%20Lite%20Micro-FF6F00.svg)](https://www.tensorflow.org/lite/microcontrollers)
