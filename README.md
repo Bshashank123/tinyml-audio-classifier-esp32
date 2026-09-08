@@ -19,7 +19,7 @@ An end-to-end, ultra-low-latency **Edge AI Audio Classification System** running
 ---
 
 ### ⏱️ Classification Results & Detailed Timing Benchmarks
-![Classification Results](docs/Classification_Results.png)
+![Classification Results](docs/Classification_Results.jpg)
 *Figure 2: Real-time prediction with class confidence bar charts and microsecond-level timing breakdown table matching device and browser latency.*
 
 ---
