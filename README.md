@@ -4,7 +4,6 @@
 [![TensorFlow Lite Micro](https://img.shields.io/badge/AI-TensorFlow%20Lite%20Micro-FF6F00.svg)](https://www.tensorflow.org/lite/microcontrollers)
 [![Accuracy](https://img.shields.io/badge/Test%20Accuracy-82.9%25-brightgreen.svg)]()
 [![Model Size](https://img.shields.io/badge/INT8%20Model%20Size-17.9%20KB-blue.svg)]()
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
 
 An end-to-end, ultra-low-latency **Edge AI Audio Classification System** running entirely on **ESP32 / ESP32-S3** microcontrollers. The system features an on-device Wi-Fi Access Point, an embedded asynchronous REST web server, real-time Mel-spectrogram feature extraction, and an INT8-quantized Deep Convolutional Neural Network (CNN) powered by **TensorFlow Lite Micro**.
 
@@ -230,18 +229,3 @@ If you wish to retrain or fine-tune the model with custom audio datasets:
 
 ---
 
-## ❓ Troubleshooting
-
-| Issue | Cause | Solution |
-| :--- | :--- | :--- |
-| **`fatal error: ... No such file or directory`** | Missing library in Arduino IDE | Ensure `TensorFlowLite_ESP32`, `ESPAsyncWebServer`, `AsyncTCP`, and `arduinoFFT` are installed in your Arduino libraries folder. |
-| **No output in Serial Monitor (ESP32-S3)** | USB CDC Disabled | Set `Tools > USB CDC On Boot: Enabled` in Arduino IDE. |
-| **Wi-Fi AP password incorrect** | Password length mismatch | WPA2-PSK requires at least 8 characters. Default is `12345678`. |
-| **Browser cannot open `192.168.4.1`** | Mobile cellular data interference | On smartphones, temporarily disable mobile data while connected to the `TinyML-AudioClassifier` Wi-Fi AP. |
-| **Classification always predicts Unknown / Low confidence** | Low amplitude or silent audio | Ensure the uploaded audio has clear sound within the 1.0s window. |
-
----
-
-## 📜 License
-
-This project is open-source under the [MIT License](LICENSE).
