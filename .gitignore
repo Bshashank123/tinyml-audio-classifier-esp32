@@ -1,0 +1,26 @@
+# Datasets and large training numpy arrays
+ESC-50-master/
+*.npy
+*.wav
+*.mp3
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+.pytest_cache/
+.venv/
+venv/
+ENV/
+
+# Arduino build artifacts
+*.hex
+*.bin
+*.elf
+build/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
